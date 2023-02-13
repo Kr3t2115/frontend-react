@@ -1,23 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-
-interface Persona {
-  name: String;
-  wiek: Number;
-}
+import { RouterProvider } from "react-router-dom";
+import { allRoutes } from "./routes/routes";
 
 function App() {
-  const [count, setCount] = useState<Persona>({
-    name: "sada",
-    wiek: 123,
-  });
-
-  return (
-    <div className="App">
-      <h1>{count.name + " " + count.wiek}</h1>
-    </div>
-  );
+  return <RouterProvider router={allRoutes} />;
 }
 
 export default App;
