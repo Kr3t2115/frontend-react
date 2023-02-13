@@ -1,0 +1,66 @@
+.kamm { 
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: var(--bg-color);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: .4rem;
+}
+
+.nav a:hover {
+    color: linear-gradient(
+        to left,
+        var(--font-color),
+        var(--font-color) 50%, 50%);;
+    transition: 1s;
+}
+
+.nav a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom:  0px;
+    background-color: var(--font-color);
+    opacity: 0;
+    transition: .4s;
+
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--font-color);
+    opacity: 0;
+    transition: .4s;
+}
+
+
+.nav a:hover::before {
+    width: 50%;
+    opacity: 1;
+
+}
+.nav a:hover::after {
+    width: 50%;
+    opacity: 1;
+}
