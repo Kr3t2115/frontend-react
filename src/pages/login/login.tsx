@@ -1,5 +1,6 @@
 import { Form } from "react-router-dom"
 import  {useState , useEffect, useRef} from 'react'
+import React from "react"
 
 interface Login {
     email: String,
@@ -12,7 +13,7 @@ export default function Login() {
         password: ''
     })
 
-    const inputEmail = useRef(<React.InputHTMLAttributes<HTMLInputElement>)
+    const inputEmail = useRef<React.LegacyRef<HTMLInputElement>
 
     const inputPassword = useRef(null)
 
