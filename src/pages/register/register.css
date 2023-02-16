@@ -38,22 +38,6 @@
   width: 100%;
 }
 
-.hidden {
-  visibility: hidden;
-  height: 0px !important;
-  transition: 1s;
-  opacity: 0;
-  z-index: 0;
-  transform: translateY(-100px);
-}
-
-.unHidden {
-  visibility: visible;
-  opacity: 1;
-  height: 50px !important;
-  transform: translateY(-5px);
-}
-
 .loginContainer img {
   width: 100%;
 }
@@ -130,7 +114,7 @@
   }
 
   .BeforeContainer {
-    width: 400px;
+    width: 450px;
     height: auto;
     background-color: var(--bg-color);
   }
@@ -142,6 +126,6 @@
     height: 100vh;
   }
   .loginContainer {
-    width: min(400px, 100%);
+    width: min(450px, 100%);
   }
 }

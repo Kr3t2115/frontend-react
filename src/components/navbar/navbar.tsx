@@ -32,13 +32,15 @@ export default function Navbar() {
         <div className="col-2 mini-container-icons">
           <Link to="login">
             <LoginSVG></LoginSVG>
+            LOGIN
           </Link>
 
-          <Link to="login">
+          <Link to="register">
             <LoginSVG></LoginSVG>
+            RETGISTER
           </Link>
 
-          <Link to="login">
+          <Link to="">
             <LoginSVG></LoginSVG>
           </Link>
         </div>

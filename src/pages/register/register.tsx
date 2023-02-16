@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import LoginApi from "../../services/loginApiRequest";
-import "./login.css";
+import "./register.css";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import { Formik, Form, Field } from "formik";
 
-export default function Login() {
-  const inputPassword = useRef<HTMLDivElement>(null);
+export default function Register() {
+  document.title = "Register";
 
-  document.title = "Login";
+  const inputPassword = useRef<HTMLDivElement>(null);
 
   const validateEmail = (value: any) => {
     let error;
@@ -37,15 +36,28 @@ export default function Login() {
 
           <Formik
             initialValues={{
+              firstName: "",
+              lastName: "",
               email: "",
               password: "",
             }}
             onSubmit={(values) => {
-              LoginApi(values);
+              console.log(values);
             }}
           >
             {({ errors, touched }) => (
               <Form className="formContainer">
+                <div className="formContainerDiv">
+                  <Field
+                    name="firstName"
+                    type="text"
+                    placeholder="Write your firstname"
+                  />
+                  {errors.firstName && touched.firstName ? (
+                    <div className="error">{errors.firstName}</div>
+                  ) : null}
+                </div>
+
                 <div className="formContainerDiv">
                   <Field
                     name="email"
@@ -58,7 +70,7 @@ export default function Login() {
                   ) : null}
                 </div>
 
-                <div className="formContainerDiv hidden" ref={inputPassword}>
+                <div className="formContainerDiv" ref={inputPassword}>
                   <Field
                     name="password"
                     type="password"
@@ -69,13 +81,13 @@ export default function Login() {
                   ) : null}
                 </div>
 
-                <button type="submit">Login</button>
+                <button type="submit">Register</button>
               </Form>
             )}
           </Formik>
 
-          <Link to="/register">
-            If you not have account you can register here
+          <Link to="/login">
+            If you already have an account you can login here
           </Link>
         </div>
       </div>

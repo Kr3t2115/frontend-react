@@ -6,6 +6,8 @@ export default async function LoginApi(objectToSend: Object) {
       method: "post",
     }
   );
+
+  console.log(objectToSend);
 }
 
 // Credentials musi byc by wogólue backend mógł dopisać nam cookiesy na fronce
