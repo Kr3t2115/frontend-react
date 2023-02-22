@@ -71,11 +71,11 @@ export default function Home() {
                   <img src={imageLink} alt={imageName + " logo"}></img>
                   {crypto.symbol}
                 </td>
-                <td>{Math.round(parseFloat(crypto.openPrice) * 100) / 100}$</td>
+                <td>{parseFloat(crypto.openPrice)}$</td>
                 <td className="center">
-                  {Math.round(parseFloat(crypto.lastPrice) * 100) / 100}$
+                  {parseFloat(crypto.lastPrice)}$
                 </td>
-                <td>{Math.round(parseFloat(crypto.highPrice) * 100) / 100}$</td>
+                <td>{parseFloat(crypto.highPrice)}$</td>
 
                 <td>
                   {Math.round(parseFloat(crypto.priceChangePercent) * 100) /

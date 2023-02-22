@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
+
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('https://binance.com/bp/BinancePlex-SemiBold.woff2') format('woff2'),url('https://binance.com/bp/BinancePlex-SemiBold.otf') format('opentype');
+}
+
+
 :root {
   color-scheme: light dark;
   font-synthesis: none;
@@ -17,7 +25,9 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   min-height: 100vh;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: BinancePlex, Arial,sans-serif!important
+
 }
 
 @media (prefers-color-scheme: light) {

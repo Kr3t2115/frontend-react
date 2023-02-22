@@ -33,5 +33,5 @@ th {
   width: 64px;
   aspect-ratio: 16/9;
   object-fit: contain;
-  margin-left: 0px;
+  margin-left: -20px;
 }
