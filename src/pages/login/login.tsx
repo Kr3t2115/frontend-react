@@ -52,6 +52,7 @@ export default function Login() {
                     type="email"
                     placeholder="Write your email"
                     validate={validateEmail}
+                    required
                   />
                   {errors.email && touched.email ? (
                     <div className="error">{errors.email}</div>
@@ -63,6 +64,7 @@ export default function Login() {
                     name="password"
                     type="password"
                     placeholder="Write your password"
+                    required
                   />
                   {errors.password && touched.password ? (
                     <div className="error">{errors.password}</div>

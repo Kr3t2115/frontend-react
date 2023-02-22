@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+.table {
+  width: 80% !important;
+  margin: auto;
+  text-align: left;
+  color: #fff !important;
+  margin-top: 100px;
+}
+
+.table tr {
+  transition: 0.7s;
+  display: flex;
+}
+
+.table tbody tr:hover {
+  color: var(--font-color) !important;
+}
+
+.table tbody td,
+th {
+  width: 100%;
+}
+
+.table tbody td {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.table img {
+  width: 64px;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  margin-left: 0px;
+}

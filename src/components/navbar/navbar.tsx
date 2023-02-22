@@ -18,8 +18,8 @@ export default function Navbar() {
             <Link to="">
               <span>Home</span>
             </Link>
-            <Link to="">
-              <span>Home</span>
+            <Link to="markets">
+              <span>Markets</span>
             </Link>
             <Link to="">
               <span>Home</span>
